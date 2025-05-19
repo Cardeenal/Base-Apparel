@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans";
+}
+
+.left-div {
+  margin-bottom: 5rem;
+}
+
+.text p {
+  color: hsl(0, 36%, 70%);
+  padding-bottom: 2.5rem;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+
+.diff {
+  color: hsl(0, 80%, 86%);
+  font-weight: 350;
+}
+
+h1 {
+  line-height: 60px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+
+.div1 {
+  padding: 2rem 7rem 0;
+}
+
+.mag {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.mail {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  width: 400px;
+}
+
+.mail input {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  flex: 1;
+  font-size: 16px;
+  border-radius: 30px 0 0 30px;
+  color: hsl(0, 49%, 83%);
+}
+
+.mail input placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.mail button {
+  background: linear-gradient(to right, #f5aec4, #ec7299);
+  border: none;
+  padding: 12px 28px;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px 30px;
+  cursor: pointer;
+}
+
+.mobile-img img {
+  display: none;
+}
+
+/* MEDIA QUERIES  */
+@media only screen and (max-width: 768px) {
+  .right-div img {
+    display: none;
+  }
+
+  .mobile-img img {
+    display: block;
+    height: 40vh;
+    width: 60vh;
+  }
+
+  main {
+    display: block;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .left-div {
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .left-div img {
+    display: block;
+    width: 50%;
+    padding: 1.5rem;
+  }
+
+  .middle-div {
+    order: 3;
+    text-align: center;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .text p {
+    padding: 0.6rem;
+    text-align: center;
+  }
+
+  .div1 {
+    padding: 0;
+  }
+
+  h1 {
+    padding-top: 2rem;
+    font-size: 30px;
+    line-height: 2.3rem;
+  }
+
+  .mail {
+    width: fit-content;
+  }
+}
