@@ -143,5 +143,6 @@ main {
 
   .mail {
     width: fit-content;
+    margin: auto;
   }
 }
