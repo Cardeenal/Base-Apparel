@@ -28,16 +28,17 @@
           <div class="text">
             <p>
               Hello fellow shoppers! We're currently building our new fashion
-              store Add your emaiil below to stay up-to-date with announcements
+              store. Add your email below to stay up-to-date with announcements
               and our launch deals.
             </p>
 
-            <div class="mail">
-              <input type="email" placeholder="Email Address" />
-              <button type="submit">
-                <span>&rarr;</span>
-              </button>
-            </div>
+            <!-- Fixed: using a proper form -->
+            <form id="myForm" class="mail">
+              <input name="email" placeholder="Email Address" id="email" />
+              <button type="submit">Submit</button>
+            </form>
+            <p id="text"></p>
+            <!-- <p id="submission-success">Submission successful</p> -->
           </div>
         </div>
       </div>
@@ -47,5 +48,8 @@
         </div>
       </div>
     </main>
+
+    <!-- Fixed: corrected the src filename -->
+    <script src="script.js"></script>
   </body>
 </html>

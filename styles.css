@@ -88,6 +88,23 @@ main {
   display: none;
 }
 
+/* #error-warning {
+  display: none;
+  color: red;
+  padding-top: 1rem;
+}
+
+#submission-success {
+  display: none;
+  color: rgb(31, 235, 31);
+  margin-top: 10px;
+} */
+
+#message {
+  display: block;
+  margin-top: 20px;
+}
+
 /* MEDIA QUERIES  */
 @media only screen and (max-width: 768px) {
   .right-div img {
