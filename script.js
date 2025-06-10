@@ -8,7 +8,9 @@ document.getElementById("myForm").addEventListener("submit", function(event){
    
     if (regex.test(mail)){
         message.innerHTML = "Submission successful"
+           message.style.color = "green";
     }else {
         message.innerHTML = "Submission unsuccesful"
+           message.style.color = "red";
     }
 });
